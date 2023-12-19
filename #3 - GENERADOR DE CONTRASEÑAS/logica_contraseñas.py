@@ -8,9 +8,9 @@ class LogicaContraseñas:
 
         if not mayus:
 
-            return chr(random.randint(ord('a'), ord('x')))
+            return chr(random.randint(ord('a'), ord('z')))
         
-        return chr(random.randint(ord('a'), ord('x'))) if random.randint(0, 1) == 0 else chr(random.randint(ord('A'), ord('X')))
+        return chr(random.randint(ord('a'), ord('z'))) if random.randint(0, 1) == 0 else chr(random.randint(ord('A'), ord('Z')))
 
     @staticmethod
     def generar_numero():
