@@ -14,7 +14,7 @@
 
 
 
-texto = "Este es un ejemplo, con algunas palabras. Y también tiene puntos."
+texto = input(print("Introduce el texto a analizar:"))
 
 
 palabras = texto.split()
@@ -61,23 +61,28 @@ for palabra in resultado2:
 
     dicc[palabra] = len(palabra)
 
-print(dicc)
+#print(dicc)
 
 
 
-key_list = dicc.keys()
-value_list = dicc.values()
+
+key_list = list(dicc.keys())
+value_list = list(dicc.values())  # Convertir a lista
+
+lista_resultados = []
 
 valor_a_buscar = max(value_list)
-print(valor_a_buscar)
-
-
 
 for i in range(len(dicc)):
 
     if value_list[i] == valor_a_buscar:
 
-        print(key_list[i])
+        lista_resultados.append(key_list[i])
+
+
+print("Palabra/s mas larga:", lista_resultados, "caracteres =", valor_a_buscar)
+
+
 
 
 
