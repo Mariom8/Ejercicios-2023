@@ -11,9 +11,6 @@
 
 
 
-
-
-
 texto = input(print("Introduce el texto a analizar:"))
 
 
